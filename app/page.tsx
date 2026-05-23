@@ -105,8 +105,8 @@ export default function Home() {
           <p className="text-sm font-medium uppercase tracking-wide text-accent">
             Start here
           </p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Build software with AI — from idea to live URL
+          <h1 className="mt-3 text-4xl font-bold tracking-tight text-accent sm:text-5xl">
+            Build software with AI
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-muted">
             Use Cursor to write code with an AI partner, GitHub to save every

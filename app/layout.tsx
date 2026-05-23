@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Build Software with AI — Cursor, GitHub & Vercel",
+  title: "Build Software with AI",
   description:
     "Learn the Code → Save → Ship workflow with Cursor, GitHub, and Vercel to build and deploy software with AI assistance.",
 };

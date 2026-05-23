@@ -264,10 +264,10 @@ git push -u origin main`}</CodeBlock>
             <li>
               Wait for Vercel to finish deploying, then open your live site and refresh:{" "}
               <a
-                href="https://your-project.vercel.app"
+                href="https://website-builder-wheat-mu.vercel.app"
                 className="font-medium text-accent hover:text-accent-hover"
               >
-                https://your-project.vercel.app
+                https://website-builder-wheat-mu.vercel.app
               </a>
               .
             </li>

@@ -1,6 +1,6 @@
 # Project journal
 
-> **Doc version:** 0.2.1 · **Last updated:** 2026-05-23 16:15 +0530
+> **Doc version:** 0.3.0 · **Last updated:** 2026-05-23 16:45 +0530
 
 ## Table of contents
 
@@ -15,6 +15,7 @@
   - [A005 — Verified production build](#a005--2026-05-23-1600-0530--verified-production-build)
   - [A006 — GitHub web auth, repo create, and push](#a006--2026-05-23-1602-0530--github-web-auth-repo-create-and-push)
   - [A007 — Project journal skill and docs bootstrap](#a007--2026-05-23-1615-0530--project-journal-skill-and-docs-bootstrap)
+  - [A008 — Vercel production deploy](#a008--2026-05-23-1645-0530--vercel-production-deploy)
 
 ---
 
@@ -24,7 +25,8 @@ This project is a **one-page teaching website** that walks beginners through bui
 
 **Stack:** Next.js 16 (App Router), TypeScript, Tailwind CSS  
 **Repo:** https://github.com/goyal-s/website-builder  
-**Status:** Built and pushed to GitHub; Vercel deploy pending
+**Live:** https://website-builder-wheat-mu.vercel.app  
+**Status:** Live on Vercel; GitHub auto-deploy connection pending
 
 ```mermaid
 flowchart LR
@@ -48,7 +50,7 @@ flowchart LR
 | Feature build | Done | 0.1.2 | 2026-05-23 |
 | GitHub push | Done | 0.2.0 | 2026-05-23 |
 | Documentation | Done | 0.2.1 | 2026-05-23 |
-| Vercel deploy | Pending | — | — |
+| Vercel deploy | Done | 0.3.0 | 2026-05-23 |
 
 ```mermaid
 gantt
@@ -60,7 +62,7 @@ gantt
   section Ship
   GitHub push        :done, 2026-05-23, 1d
   Docs bootstrap     :done, 2026-05-23, 1d
-  Vercel deploy      :active, 2026-05-23, 1d
+  Vercel deploy      :done, 2026-05-23, 1d
 ```
 
 ---
@@ -252,5 +254,38 @@ sequenceDiagram
 - Semver set to **0.2.1** (patch after GitHub milestone docs)
 
 **Artifacts:** `docs/`, `CHANGELOG.md`, `.cursor/skills/project-journal/`, `PLAN_Project Journal Team Skill + Documentation Bootstrap.md`
+
+---
+
+### A008 — 2026-05-23 16:45 +0530 — Vercel production deploy
+
+| Field | Value |
+|-------|-------|
+| Actor | Both |
+| Version | 0.3.0 |
+| Category | deploy |
+
+**Summary:** Deployed the site to Vercel production via CLI with web authentication.
+
+**Details:**
+- Signed in with `npx vercel login` (device OAuth flow)
+- Linked project to scope `sahilleo-5492s-projects/website-builder`
+- Production deploy succeeded; build passed on Vercel (Next.js 16.2.6)
+- GitHub repo auto-connect failed (Vercel account vs `goyal-s` repo access) — connect manually in dashboard
+- Updated live URL in `app/page.tsx`, `README.md`, and docs
+
+**Artifacts:** https://website-builder-wheat-mu.vercel.app
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Agent
+  participant Vercel
+  User->>Agent: Deploy to Vercel
+  Agent->>Vercel: vercel login
+  Vercel->>User: OAuth in browser
+  Agent->>Vercel: vercel link + vercel --prod
+  Vercel-->>Agent: Production URL ready
+```
 
 ---

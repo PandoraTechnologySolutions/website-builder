@@ -1,21 +1,25 @@
-# Release notes — v0.2.1
+# Release notes — v0.3.0
 
 ## Highlights
 
-- One-page AI teaching site live on GitHub (Cursor → GitHub → Vercel workflow)
-- Project journal Team skill added for ongoing timestamped documentation
-- Doc semver **0.2.1** with full action backfill (A001–A007)
+- **Site is live** at https://website-builder-wheat-mu.vercel.app
+- Walkthrough section and README updated with the real production URL
+- First Vercel production deploy completed via CLI
 
 ## What changed
 
-- **A003–A005** — Next.js scaffold, teaching one-pager, production build verified
-- **A006** — GitHub repo created and pushed (`goyal-s/website-builder`)
-- **A007** — `docs/` folder, `CHANGELOG.md`, and `project-journal` Team skill
+- **A008** — Vercel login, project link, production deploy
+- Live URL placeholders replaced in `app/page.tsx` and `README.md`
 
 ## Links
 
 - **Repo:** https://github.com/goyal-s/website-builder
-- **Live:** _Pending Vercel deploy — see [next_actions.md](next_actions.md)_
+- **Live:** https://website-builder-wheat-mu.vercel.app
+- **Vercel dashboard:** https://vercel.com/sahilleo-5492s-projects/website-builder
+
+## Previous release — v0.2.1
+
+Project journal Team skill and documentation bootstrap (A001–A007).
 
 ## Previous release — v0.2.0
 

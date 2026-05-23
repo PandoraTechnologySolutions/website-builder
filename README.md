@@ -27,6 +27,4 @@ npm start
 
 ## Live URL
 
-After deploying, replace the placeholder with your production URL:
-
-**https://your-project.vercel.app**
+**https://website-builder-wheat-mu.vercel.app**

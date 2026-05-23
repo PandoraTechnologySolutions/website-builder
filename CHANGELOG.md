@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here. Format based on [Keep a Changelog](https://keepachangelog.com/). Doc semver tracked in [`docs/VERSION`](docs/VERSION).
 
+## [0.3.0] - 2026-05-23
+
+### Deployed
+
+- Production site: https://website-builder-wheat-mu.vercel.app
+
+### Changed
+
+- Walkthrough and README updated with live Vercel URL (A008)
+
 ## [0.2.1] - 2026-05-23
 
 ### Added
@@ -25,7 +35,7 @@ All notable changes to this project are documented here. Format based on [Keep a
 
 ### Deployed
 
-- _Not yet — Vercel pending_
+- https://website-builder-wheat-mu.vercel.app
 
 ## [0.1.0] - 2026-05-23
 

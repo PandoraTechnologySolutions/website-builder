@@ -1,4 +1,9 @@
 import type { ReactNode } from "react";
+import {
+  SeeWorkflowButton,
+  WorkflowFlowchart,
+  WorkflowProvider,
+} from "./components/workflow-flowchart";
 
 const navLinks = [
   { href: "#overview", label: "Overview" },
@@ -77,6 +82,7 @@ function ToolSection({
 
 export default function Home() {
   return (
+    <WorkflowProvider>
     <>
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-6 py-3">
@@ -101,7 +107,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-6 pb-16">
-        <section id="top" className="scroll-mt-24 py-16 sm:py-20">
+        <section id="top" className="scroll-mt-24 pt-12 pb-6 sm:pt-16 sm:pb-8">
           <p className="text-sm font-medium uppercase tracking-wide text-accent">
             Start here
           </p>
@@ -112,15 +118,10 @@ export default function Home() {
             Use Cursor to write code with an AI partner, GitHub to save every
             change, and Vercel to ship updates to the web in minutes.
           </p>
-          <a
-            href="#overview"
-            className="mt-8 inline-flex items-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
-          >
-            See the workflow
-          </a>
+          <SeeWorkflowButton />
         </section>
 
-        <section id="overview" className="scroll-mt-24 border-t border-border pt-12">
+        <section id="overview" className="scroll-mt-24 border-t border-border pt-8">
           <ToolBadge>Overview</ToolBadge>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground">
             Code → Save → Ship
@@ -219,6 +220,8 @@ git push -u origin main`}</CodeBlock>
           proTip="Open the deployment log if a build fails - the error usually points to the exact file and line to fix locally before pushing again."
         />
 
+        <WorkflowFlowchart />
+
         <section id="walkthrough" className="scroll-mt-24 border-t border-border pt-12">
           <ToolBadge>Walkthrough</ToolBadge>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -264,10 +267,10 @@ git push -u origin main`}</CodeBlock>
             <li>
               Wait for Vercel to finish deploying, then open your live site and refresh:{" "}
               <a
-                href="https://website-builder-wheat-mu.vercel.app"
+                href="https://pandoraprathamapadam.vercel.app"
                 className="font-medium text-accent hover:text-accent-hover"
               >
-                https://website-builder-wheat-mu.vercel.app
+                https://pandoraprathamapadam.vercel.app
               </a>
               .
             </li>
@@ -296,5 +299,6 @@ git push -u origin main`}</CodeBlock>
         </div>
       </footer>
     </>
+    </WorkflowProvider>
   );
 }

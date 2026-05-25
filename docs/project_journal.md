@@ -25,7 +25,7 @@ This project is a **one-page teaching website** that walks beginners through bui
 
 **Stack:** Next.js 16 (App Router), TypeScript, Tailwind CSS  
 **Repo:** https://github.com/goyal-s/website-builder  
-**Live:** https://website-builder-wheat-mu.vercel.app  
+**Live:** https://pandoraprathamapadam.vercel.app  
 **Status:** Live on Vercel; GitHub auto-deploy connection pending
 
 ```mermaid

@@ -4,7 +4,7 @@
 
 1. **Connect GitHub for auto-deploy** — In [Vercel project settings](https://vercel.com/sahilleo-5492s-projects/website-builder/settings/git), connect `goyal-s/website-builder`. CLI link failed because the Vercel account (`sahilleo-5492s-projects`) may not have GitHub access to the `goyal-s` org repo.
 
-2. **Verify the live site** — Open https://website-builder-wheat-mu.vercel.app and confirm all sections render.
+2. **Verify the live site** — Open https://pandoraprathamapadam.vercel.app and confirm all sections render.
 
 3. **Optional: custom domain** — Add a domain in Vercel project settings if you want something other than `*.vercel.app`.
 

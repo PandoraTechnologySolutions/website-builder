@@ -2,7 +2,7 @@
 
 ## Highlights
 
-- **Site is live** at https://website-builder-wheat-mu.vercel.app
+- **Site is live** at https://pandoraprathamapadam.vercel.app
 - Walkthrough section and README updated with the real production URL
 - First Vercel production deploy completed via CLI
 
@@ -14,7 +14,7 @@
 ## Links
 
 - **Repo:** https://github.com/goyal-s/website-builder
-- **Live:** https://website-builder-wheat-mu.vercel.app
+- **Live:** https://pandoraprathamapadam.vercel.app
 - **Vercel dashboard:** https://vercel.com/sahilleo-5492s-projects/website-builder
 
 ## Previous release — v0.2.1
